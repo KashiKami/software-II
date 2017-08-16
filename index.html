@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
   <head>
     <title>Calc</title>
@@ -12,46 +18,54 @@
       <input type="text" value="" class="right" id="texto" disabled>
     </form>
     <div>
-        <table>
+        <table class="numbers">
           <tr>
-            <td><h3>HEX</h3></td>
-            <td><h3>0</h3></td>
-          </tr>
-          <tr>
-            <td><h3>DEC</h3></td>
-            <td><h3>0</h3></td>
-          </tr>
-          <tr>
-            <td><h3>OCT</h3></td>
-            <td><h3>0</h3></td>
-          </tr>
-          <tr>
-            <td><h3>BIN</h3></td>
-            <td><h3>0</h3></td>
+            <td><h3>MC</h3></td>
+            <td><h3>MR</h3></td>
+            <td><h3>M+</h3></td>
+            <td><h3>M-</h3></td>
+            <td><h3>MS</h3></td>
+            <td><h3>M^-</h3></td>
           </tr>
         </table>
     </div>
     <div class="">
       <table class="numbers">
         <tr>
-          <td><button type="button" name="button" id="7" onclick="setValue(7)">7</button></td>
-          <td><button type="button" name="button" id="8" onclick="setValue(8)">8</button></td>
-          <td><button type="button" name="button" id="9" onclick="setValue(9)">9</button></td>
+          <td><button type="button" name="button" id="%" onclick="">%</button></td>
+          <td><button type="button" name="button" id="√" onclick="">√</button></td>
+          <td><button type="button" name="button" id="x" onclick="">x^2</button></td>
+          <td><button type="button" name="button" id="1/x" onclick="">1/x</button></td>
         </tr>
         <tr>
-          <td><button type="button" name="button" id="6" onclick="setValue(4)">4</button></td>
-          <td><button type="button" name="button" id="5" onclick="setValue(5)">5</button></td>
-          <td><button type="button" name="button" id="4" onclick="setValue(6)">6</button></td>
+          <td><button type="button" name="button" id="CE" onclick="">CE</button></td>
+          <td><button type="button" name="button" id="C" onclick="">C</button></td>
+          <td><button type="button" name="button" id="delete" onclick=""><-</button></td>
+          <td><button type="button" name="button" id="÷" onclick="">÷</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" name="button" onclick="setValue(7)">7</button></td>
+          <td><button type="button" name="button" onclick="setValue(8)">8</button></td>
+          <td><button type="button" name="button" onclick="setValue(9)">9</button></td>
+          <td><button type="button" name="button" id="X" onclick="">X</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" name="button" onclick="setValue(4)">4</button></td>
+          <td><button type="button" name="button" onclick="setValue(5)">5</button></td>
+          <td><button type="button" name="button" onclick="setValue(6)">6</button></td>
+          <td><button type="button" name="button" id="-" onclick="">-</button></td>
         </tr>
         <tr>
           <td><button type="button" name="button" onclick="setValue(1)">1</button></td>
           <td><button type="button" name="button" onclick="setValue(2)">2</button></td>
           <td><button type="button" name="button" onclick="setValue(3)">3</button></td>
+          <td><button type="button" name="button" id="mas" onclick="">+</button></td>
         </tr>
         <tr>
-          <td><button type="button" name="button"></button></td>
+          <td><button type="button" name="button">+-</button></td>
           <td><button type="button" name="button" onclick="setValue(0)">0</button></td>
-          <td><button type="button" name="button"></button></td>
+          <td><button type="button" name="button">,</button></td>
+          <td><button type="button" name="button" id="igual" onclick="">=</button></td>
         </tr>
       </table>
     </div>
