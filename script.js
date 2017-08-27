@@ -16,7 +16,7 @@
 
 	function Operation(Op) {
 		if (document.frm_calc.txt_01.value == ""){
-			alert("O Campo esta vacio digite um valor");
+			alert("El Campo esta vacio digite un valor");
 			document.frm_calc.txt_01.value ="0"; }
 		else{
 			if (FlagNewNum && PendingOp != "=");
