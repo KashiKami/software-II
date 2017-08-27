@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Calculadorax</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<form name="frm_calc">
+		<div class="centraTabla">
+				<input type="text" name="txt_01" value="0"  onkeydown="return false">
+		<table class="myTable">
+			<tr>
+				<td>
+					<button class="button" type="button" name="btn_porcent" id="porcent" onclick="Operation('/')">%</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_v" id="v" onclick="Operation('/')">√ </button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_x2" id="x2" onclick="Operation('/')">x<sup>2</sup></button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_1x" id="1x" onclick="Operation('/')">1/x</button>
+				</td>
+			</tr>
+			<tr>
+				<td><button class="button" type="button" name="btn_ac" id="AC" onclick="Operation('/')">AC</button></td>
+				<td>
+					<button class="button" type="button" name="btn_c" id="C" onclick="Operation('/')">C</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_del" id="<-" onclick="Operation('/')">c-</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_divi" id="/" onclick="Operation('/')">÷</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="button" type="button" name="btn_7" id="7" onclick="NumPressed(7)">7</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_8" id="8" onclick="NumPressed(8)">8</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_9" id="9" onclick="NumPressed(9)">9</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_mult" id="*" onclick="Operation('*')">*</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="button" type="button" name="btn_4" id="4" onclick="NumPressed(4)">4</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_5" id="5" onclick="NumPressed(5)">5</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_6" id="6" onclick="NumPressed(6)">6</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_subt" id="-" onclick="Operation('-')">-</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="button" type="button" name="btn_1" id="1" onclick="NumPressed(1)">1</button>
+
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_2" id="2" onclick="NumPressed(2)">2</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_divi" id="3" onclick="NumPressed(3)">3</button>
+
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_soma" id="+" onclick="Operation('+')">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="button" type="button" name="btn_masmenos" id="+-" onclick="Operation('/')">±</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_0" id="0" onclick="NumPressed(0)">0</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_pont" id="," onclick="Ponto()">.</button>
+				</td>
+				<td>
+					<button class="button" type="button" name="btn_igual" id="=" onclick="Operation('=')">=</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</form>
+</body>
+
+</html>
