@@ -19,7 +19,16 @@
 			alert("El Campo esta vacio digite un valor");
 			document.frm_calc.txt_01.value ="0"; }
 		else{
-			if (FlagNewNum && PendingOp != "=");
+          if (FlagNewNum && PendingOp != "="){
+            if ( '√' == PendingOp )
+					document.frm_calc.txt_01.value = Math.sqrt(document.frm_calc.txt_01.value);
+            else if ( 'x^2' == PendingOp )
+					document.frm_calc.txt_01.value *= document.frm_calc.txt_01.value;
+            else if ( '1/x' == PendingOp )
+					document.frm_calc.txt_01.value = 1/document.frm_calc.txt_01.value;
+            else if ( '+-' == PendingOp )
+					document.frm_calc.txt_01.value = -1*document.frm_calc.txt_01.value;
+          }
 			else	{
 				FlagNewNum = true;
 				if ( '+' == PendingOp )
@@ -30,6 +39,7 @@
 					Accum /= parseFloat(document.frm_calc.txt_01.value);
 					else if ( '*' == PendingOp )
 					Accum *= parseFloat(document.frm_calc.txt_01.value);
+              		
 				else
 					Accum = parseFloat(document.frm_calc.txt_01.value);
 					document.frm_calc.txt_01.value = Accum;
